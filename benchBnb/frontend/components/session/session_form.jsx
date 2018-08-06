@@ -29,10 +29,10 @@ class SessionForm extends React.Component {
 
     const linkValue = this.props.formType === "Log In" ? (
       <Link to='/signup'>Sign Up</Link>
-      ) : (
+    ) : (
       <Link to='/login'>Login</Link>
-      );
-
+    );
+    
     return (
       <div>
         <h2>{this.props.formType}</h2>
@@ -58,9 +58,7 @@ class SessionForm extends React.Component {
         </form>
         {linkValue}
         <ul>
-          {
-          this.props.errors.map( (err, idx) => <li key={idx}>{err}</li>)
-          }
+          {this.props.errors.map( (err, idx) => <li key={idx}>{err}</li>)}
         </ul>
       </div>
     );
