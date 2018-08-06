@@ -7,7 +7,6 @@ class Api::SessionsController < ApplicationController
       render json: @user
     else
       render json: ['Invalid login credentials'], status: 422
-      # redirect_to
     end
   end
 
@@ -17,9 +16,6 @@ class Api::SessionsController < ApplicationController
       render json: { }
     else
       render json: ['No current user - 404'], status: 404
-      # render "error 404"
     end
-
-    # redirect_to :index
   end
 end

@@ -4,7 +4,7 @@ import {
 } from '../actions/session_actions';
 import merge from 'lodash/merge';
 
-const _nullSession = { currentUser: null };
+const _nullSession = { id: null };
 
 const sessionReducer = (state = _nullSession, action ) => {
   Object.freeze(state);
