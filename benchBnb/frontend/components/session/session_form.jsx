@@ -14,9 +14,9 @@ class SessionForm extends React.Component {
   }
 
   handleInput(type){
-    return (e => {
+    return e => {
       this.setState({[type]: e.target.value});
-    });
+    };
   }
 
   handleSubmit(e){
@@ -32,7 +32,7 @@ class SessionForm extends React.Component {
     ) : (
       <Link to='/login'>Login</Link>
     );
-    
+
     return (
       <div>
         <h2>{this.props.formType}</h2>

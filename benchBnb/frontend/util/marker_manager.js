@@ -22,5 +22,9 @@ class MarkerManager {
     this.markers[bench.id] = marker;
   }
 
+  removeMarker(marker) {
+
+  }
+
 }
 export default MarkerManager;
